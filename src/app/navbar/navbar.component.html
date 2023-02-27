@@ -1,1 +1,32 @@
-<p dir="rtl">navbar works!</p>
+<header dir="rtl" class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/images/logo.png" alt="k-shop logo" />
+    </a>
+    <form class="container-fluid">
+      <div class="input-group icon_background">
+        <span class="input-group-text" id="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+        <input
+          type="search"
+          class="form-control"
+          placeholder="عم تبحث ؟"
+          aria-label="search"
+          aria-describedby="search-icon"
+        />
+      </div>
+    </form>
+    <div class="flex-withGap">
+      <div class="profile__img icon_background">
+        <img src="/assets/icons/person-24px.png" />
+      </div>
+      <div class="shopping_cart icon_background flex-withGap">
+        <span>سلة التسوق</span>
+        <div>
+          <img src="/assets/icons/shopping_cart-24px.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
