@@ -1,5 +1,6 @@
 header.navbar {
   padding: 24px 10px;
+  background-color: white;
 }
 header .container-fluid {
   gap: 10px;

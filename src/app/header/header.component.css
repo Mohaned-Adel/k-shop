@@ -1,0 +1,23 @@
+ul.navbar-nav {
+  background-color: var(--background-color);
+  width: 100%;
+  gap: 20px;
+}
+
+ul li {
+  color: var(--main-color);
+  transition: 0.4s all ease;
+}
+
+.dropdown-toggle::after {
+  margin-right: 0.5em;
+  margin-left: 0;
+}
+
+.dropdown-menu[data-bs-popper] {
+  right: 0;
+}
+
+ul li:hover {
+  color: var(--main-accent-color);
+}
