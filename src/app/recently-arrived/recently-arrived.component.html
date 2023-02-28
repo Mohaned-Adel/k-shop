@@ -1,1 +1,64 @@
-<section>وصل حديثا</section>
+<section>
+  <div class="aside-title mb-2">
+    <h5 class="m-0">وصل حديثا</h5>
+    <span class="border-line"></span>
+    <button class="view-btn">عرض الكل</button>
+  </div>
+  <div class="row">
+    <div *ngFor="let card of cardData" class="col-md-3 px-2 mb-3">
+      <div class="card h-100 mb-3 p-0" style="max-width: 540px">
+        <div class="card-div row g-0">
+          <div class="col-md-12 position-relative">
+            <span *ngIf="card.new" class="new-span">جديد</span>
+            <span *ngIf="card.offer" class="offer-span">عرض</span>
+            <img
+              src="{{ card.imageSrc }}"
+              class="img-fluid rounded-start"
+              alt="card"
+            />
+            <span class="compare-span">
+              <a href="#">
+                <img src="assets/icons/compare_arrows_black_24dp.png" />
+              </a>
+            </span>
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <h5 class="card-title textOverflow">{{ card.title }}</h5>
+              <ngb-rating
+                [max]="5"
+                [rate]="card.stars"
+                [readonly]="true"
+              ></ngb-rating>
+              <p *ngIf="card.price != 0" class="card-oldPrice mb-0">
+                {{ card.price }} ج.م
+              </p>
+              <p class="card-text card-price">{{ card.newPrice }} ج.م</p>
+              <div
+                class="card-text card-icons d-flex justify-content-center align-items-center gap-2"
+              >
+                <div class="shop-card-icon flex-grow-1">
+                  <a class="addToCart" href="#">
+                    <img
+                      class="ms-2"
+                      src="assets/icons/add_shopping_cart-white.png"
+                    />
+                    <span>أضف للسلة</span>
+                  </a>
+                </div>
+                <div class="share-card-icon d-flex gap-1">
+                  <a href="#">
+                    <img src="assets/icons/share-24px.png" />
+                  </a>
+                  <a href="#">
+                    <img src="assets/icons/heart-icon.png" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "تيشيرت-كم طويل-آرت وير-نسائي-ملابس",
+    "imageSrc": "assets/images/recent-arrived/white-Tshirt.png",
+    "price": 150,
+    "newPrice": 90.0,
+    "stars": 2,
+    "offer": true,
+    "new": false
+  },
+  {
+    "title": "تيشيرت-كم طويل-آرت وير-نسائي-ملابس",
+    "imageSrc": "assets/images/recent-arrived/black-Tshirt.png",
+    "price": 0,
+    "newPrice": 90.0,
+    "stars": 2,
+    "offer": false,
+    "new": true
+  },
+  {
+    "title": "تيشيرت-كم طويل-آرت وير-نسائي-ملابس",
+    "imageSrc": "assets/images/recent-arrived/mobile.png",
+    "price": 0,
+    "newPrice": 90.0,
+    "stars": 2,
+    "offer": false,
+    "new": true
+  },
+  {
+    "title": "تيشيرت-كم طويل-آرت وير-نسائي-ملابس",
+    "imageSrc": "assets/images/recent-arrived/mobile_2.png",
+    "price": 0,
+    "newPrice": 90.0,
+    "stars": 2,
+    "offer": false,
+    "new": true
+  }
+]

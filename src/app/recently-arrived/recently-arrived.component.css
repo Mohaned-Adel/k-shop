@@ -1,0 +1,104 @@
+.card {
+  /* min-height: 455px; */
+  overflow: hidden;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 1rem 0.5rem;
+}
+
+span.new-span {
+  border: none;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 16px;
+  background-color: var(--main-accent-color);
+  color: white;
+  padding: 1px 10px;
+}
+
+.textOverflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+span.offer-span {
+  border: none;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 16px;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1px 10px;
+}
+
+span.compare-span {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.card-price {
+  color: var(--main-accent-color);
+  font-weight: bold;
+}
+
+.card-oldPrice {
+  text-decoration: line-through;
+  color: var(--main-color);
+}
+
+.addToCart {
+  background: var(--main-color);
+  color: white;
+  padding: 10px 10px 10px 15px;
+  border-radius: 10px;
+}
+
+.aside-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.aside-title .border-line {
+  flex: 1;
+  border: 1px solid var(--text-gray);
+  margin: 0px 20px;
+}
+
+.aside-title .view-btn {
+  color: var(--main-color);
+  padding: 5px 15px;
+  border: 1px solid var(--main-color);
+  background: transparent;
+  border-radius: 10px;
+  transition: 0.4s all ease;
+}
+
+.aside-title .view-btn:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+ngb-rating {
+  color: #ffe621;
+}
+
+@media screen and (max-width: 1200px) {
+  .card-icons {
+    flex-direction: column;
+    gap: 15px !important;
+  }
+  .share-card-icon {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}

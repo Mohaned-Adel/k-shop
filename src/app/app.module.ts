@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { RecentlyVisitComponent } from './recently-visit/recently-visit.component';
 import { RecentlyArrivedComponent } from './recently-arrived/recently-arrived.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RecentlyArrivedComponent } from './recently-arrived/recently-arrived.co
     RecentlyArrivedComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

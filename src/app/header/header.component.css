@@ -21,3 +21,8 @@ ul li {
 ul li:hover {
   color: var(--main-accent-color);
 }
+
+.navbar-toggler:focus {
+  border: 1px solid var(--main-accent-color);
+  box-shadow: none;
+}
