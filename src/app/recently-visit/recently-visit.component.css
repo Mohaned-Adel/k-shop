@@ -1,10 +1,32 @@
+aside .card {
+  max-height: 140px;
+  overflow: hidden;
+}
+
 span.new-span {
   border: none;
   position: absolute;
   top: 5px;
-  left: 0;
+  left: 5px;
   border-radius: 16px;
-  background-color: #23104e;
+  background-color: var(--main-accent-color);
+  color: white;
+  padding: 1px 10px;
+}
+
+.textOverflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+span.offer-span {
+  border: none;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 16px;
+  background-color: var(--secondary-color);
   color: white;
   padding: 1px 10px;
 }
@@ -13,4 +35,14 @@ span.compare-span {
   position: absolute;
   top: 5px;
   right: 5px;
+}
+
+.card-price {
+  color: var(--main-accent-color);
+  font-weight: bold;
+}
+
+.card-oldPrice {
+  text-decoration: line-through;
+  color: var(--main-color);
 }

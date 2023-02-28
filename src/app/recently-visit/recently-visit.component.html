@@ -1,15 +1,16 @@
 <aside>
-  <div>
+  <div class="aside-title">
     <h5>منتجات تصفحتها مؤخرا</h5>
   </div>
-  <div class="card mb-3" style="max-width: 540px">
+  <div *ngFor="let card of cardData" class="card mb-3" style="max-width: 540px">
     <div class="row g-0">
       <div class="col-md-4 position-relative">
-        <span class="new-span">جديد</span>
+        <span *ngIf="card.new" class="new-span">جديد</span>
+        <span *ngIf="card.offer" class="offer-span">عرض</span>
         <img
-          src="/assets/images/pinc-Tshirt.png"
+          src="{{ card.imageSrc }}"
           class="img-fluid rounded-start"
-          alt="..."
+          alt="card"
         />
         <span class="compare-span">
           <a href="#">
@@ -19,8 +20,11 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">تيشيرت-كم طويل-آرت</h5>
-          <p class="card-text">90.00 ج.م</p>
+          <h5 class="card-title textOverflow">{{ card.title }}</h5>
+          <p *ngIf="card.price != 0" class="card-oldPrice mb-0">
+            {{ card.price }} ج.م
+          </p>
+          <p class="card-text card-price">{{ card.newPrice }} ج.م</p>
           <div
             class="card-text d-flex justify-content-center align-items-center gap-2"
           >
