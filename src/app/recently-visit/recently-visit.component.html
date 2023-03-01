@@ -2,7 +2,11 @@
   <div class="aside-title">
     <h5>منتجات تصفحتها مؤخرا</h5>
   </div>
-  <div *ngFor="let card of cardData" class="card mb-3" style="max-width: 540px">
+  <div
+    *ngFor="let card of cardData"
+    class="card mb-3 animate__animated animate__bounceInRight"
+    style="max-width: 540px"
+  >
     <div class="row g-0">
       <div class="col-lg-4 position-relative">
         <span *ngIf="card.new" class="new-span">جديد</span>

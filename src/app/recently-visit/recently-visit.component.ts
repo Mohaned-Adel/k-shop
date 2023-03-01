@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import dataCard from './data.json';
+// import 'animate.css';
 
 interface Card {
   title: String;
