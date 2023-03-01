@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -16,13 +17,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HeaderComponent,
     MainComponent,
     RecentlyVisitComponent,
-    RecentlyArrivedComponent
+    RecentlyArrivedComponent,
   ],
-  imports: [
-    BrowserModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, NgbModule, MatTooltipModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

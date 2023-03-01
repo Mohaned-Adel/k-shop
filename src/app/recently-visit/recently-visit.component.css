@@ -1,6 +1,7 @@
 aside .card {
   /* max-height: 140px; */
   overflow: hidden;
+  font-family: "Cairo", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 .aside-title {

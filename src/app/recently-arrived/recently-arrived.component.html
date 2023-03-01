@@ -9,7 +9,7 @@
       *ngFor="let card of cardData"
       class="col-md-3 px-2 mb-3 animate__animated animate__bounceInUp"
     >
-      <div class="card h-100 mb-3 p-0" style="max-width: 540px">
+      <div class="card h-100 mb-3 p-0">
         <div class="card-div row g-0">
           <div class="col-md-12 position-relative">
             <span *ngIf="card.new" class="new-span">جديد</span>
@@ -20,7 +20,7 @@
               alt="card"
             />
             <span class="compare-span">
-              <a href="#">
+              <a matTooltipPosition="above" matTooltip="أضف للمقارنة" href="#">
                 <img src="assets/icons/compare_arrows_black_24dp.png" />
               </a>
             </span>
