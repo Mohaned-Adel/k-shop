@@ -5,8 +5,11 @@ ul.navbar-nav {
 }
 
 ul li {
-  color: var(--main-color);
   transition: 0.4s all ease;
+}
+
+ul li a {
+  color: var(--main-color) !important;
 }
 
 .dropdown-toggle::after {
@@ -18,8 +21,8 @@ ul li {
   right: 0;
 }
 
-ul li:hover {
-  color: var(--main-accent-color);
+ul li a:hover {
+  color: var(--main-accent-color) !important;
 }
 
 .navbar-toggler:focus {
